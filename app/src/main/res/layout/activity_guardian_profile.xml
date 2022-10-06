@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:foregroundTintMode="add"
+    android:orientation="vertical"
+    android:overScrollMode="never"
+    android:padding="@dimen/_5sdp"
+    android:scrollbars="none"
+    tools:context=".chatActivities.OngoingChatActivity">
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/userIconBackButton"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:foreground="?attr/actionModeCloseDrawable"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/guardianProfileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adam Jensen (Father)"
+            android:layout_gravity="right|center_vertical"
+            android:textStyle="bold"
+            android:textSize="@dimen/_16sdp"/>
+    </FrameLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout2">
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            tools:layout_editor_absoluteY="18dp">
+
+
+            <FrameLayout
+                android:id="@+id/guardianMainFrame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:text="Profile"
+                    android:textStyle="bold"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+
+
+
+                    <FrameLayout
+                        android:id="@+id/guardianContactActive"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp">
+
+                        <FrameLayout
+                            android:id="@+id/guardianActive"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:layout_width="@dimen/_85sdp"
+                                android:layout_height="@dimen/_85sdp"
+                                android:background="@drawable/background_image"
+                                android:foreground="@android:drawable/ic_menu_my_calendar"
+                                android:layout_gravity="center_vertical|center_horizontal"/>
+
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp">
+                        <FrameLayout
+                            android:id="@+id/setAsGuardianButton"
+                            android:layout_width="@dimen/_130sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:background="@drawable/message_received_chat"
+                            android:layout_gravity="center">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Add Guardian"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    android:textSize="@dimen/_14sdp"
+                                    android:gravity="center"/>
+                            </FrameLayout>
+
+                        </FrameLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+
+                <FrameLayout
+                    android:id="@+id/guardianContactCards"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_150sdp"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Chat Access"
+                        android:textStyle="bold"
+
+                        />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp">
+
+
+                        <FrameLayout
+                            android:id="@+id/guardianContact0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/background_input">
+
+
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:layout_width="@dimen/_55sdp"
+                                android:layout_height="@dimen/_55sdp"
+                                android:background="@drawable/background_image"
+                                android:foreground="@android:drawable/ic_menu_my_calendar" />
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|center_vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Greta Lewis"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="bold" />
+                            </FrameLayout>
+
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/guardianContact1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_60sdp"
+                            android:background="@drawable/background_input">
+
+
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:layout_width="@dimen/_55sdp"
+                                android:layout_height="@dimen/_55sdp"
+                                android:background="@drawable/background_image"
+                                android:foreground="@android:drawable/ic_menu_my_calendar" />
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|center_vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Lenny Devis"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="bold" />
+
+                            </FrameLayout>
+
+
+                        </FrameLayout>
+                    </FrameLayout>
+                    <!--                    guardian contact cards start -->
+
+                    <!--                    guardian contact cards end -->
+
+
+
+                </FrameLayout>
+            </FrameLayout>
+
+
+
+        </ScrollView>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="370dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="17dp"
+            android:background="?android:attr/listDivider"
+            android:foregroundTint="#D51717"
+            app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Chat System</string>
+    <string name="recent_messages">Recent Messages</string>
+
+    <style name="roundedImageView" parent="">
+        <item name="cornerFamilyTopRight">rounded</item>
+        <item name="cornerSizeTopRight">@dimen/_8sdp</item>
+    </style>
+</resources>
